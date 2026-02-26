@@ -1,0 +1,75 @@
+// @admissions-compass/database
+// Supabase client factory and database types
+
+export { createBrowserClient, createServerClient, createServiceClient } from './client';
+export type { CookieStore, CookieOptions } from './client';
+export type { Database, Json, Tables, InsertDto, UpdateDto } from './types';
+
+// Re-export all table row type aliases
+export type {
+  School,
+  SchoolGroup,
+  SchoolGroupMember,
+  EnrollmentSeason,
+  UserProfile,
+  SchoolStaff,
+  Household,
+  HouseholdMember,
+  Student,
+  SiblingLink,
+  Application,
+  ApplicationPayment,
+  ChecklistTemplate,
+  ChecklistTemplateItem,
+  ChecklistItem,
+  FormDefinition,
+  FormSubmission,
+  RecommendationRequest,
+  EventCalendar,
+  EventSlot,
+  EventBooking,
+  ReviewRubric,
+  ApplicationReview,
+  DecisionTemplate,
+  EnrollmentContract,
+  TuitionPayment,
+  EmailTemplate,
+  Message,
+  ConversationThread,
+  ConversationMessage,
+  Document,
+  WaitlistEntry,
+  AuditLogEntry,
+  EnrollmentSnapshot,
+  Tag,
+  ApplicationTag,
+} from './types';
+
+// Re-export enum-like types
+export type {
+  SchoolType,
+  UserType,
+  StaffRole,
+  HouseholdRelationship,
+  ApplicationType,
+  ApplicationStatus,
+  PaymentStatus,
+  ChecklistItemType,
+  ChecklistItemStatus,
+  FormType,
+  RecommenderRelationship,
+  RecommendationStatus,
+  EventType,
+  BookingStatus,
+  ReviewRecommendation,
+  DecisionType,
+  ContractStatus,
+  TuitionPaymentType,
+  EmailTemplateType,
+  MessageChannel,
+  MessageStatus,
+  ThreadStatus,
+  DocumentType,
+  DocumentStatus,
+  WaitlistStatus,
+} from './types';

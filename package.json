@@ -1,0 +1,36 @@
+{
+  "name": "admissions-compass",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TK-12 private school admissions SaaS platform",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "dev:admin": "turbo dev --filter=@admissions-compass/admin",
+    "dev:parent": "turbo dev --filter=@admissions-compass/parent",
+    "lint": "turbo lint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "type-check": "turbo type-check",
+    "clean": "turbo clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "@testing-library/jest-dom": "^6.4.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^9.0.0",
+    "jsdom": "^25.0.0",
+    "prettier": "^3.3.0",
+    "turbo": "^2.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  },
+  "packageManager": "pnpm@10.29.3",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
